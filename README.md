@@ -76,7 +76,6 @@ Notes:
 
 Contact:
 --------
-For questions, contact **[Your Name]** at **your.email@example.com** 📩  
+For questions, contact Riya Tarwani at tarwaniriya3@gmail.com 📩  
 
----
-✅ **Now you can include this `README.txt` in your project for submission!** 🚀  
+
