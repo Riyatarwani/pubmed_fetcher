@@ -1,0 +1,23 @@
+import pandas as pd
+
+# Load the CSV file
+df = pd.read_csv('pubmed_results.csv')
+
+# Replace NaN values with empty strings
+df = df.fillna("")
+
+# Ensure column names are consistent
+column_mapping = {
+    "Non-academic Author(s)": "Non-Academic Authors",
+    "Non-academic Authors": "Non-Academic Authors",
+    "Company Affiliation(s)": "Company Affiliations"
+}
+
+# Rename columns if necessary
+df = df.rename(columns={col: column_mapping.get(col, col) for col in df.columns})
+
+# Save the fixed CSV file
+df.to_csv('fixed_pubmed_results.csv', index=False)
+
+print("Fixed CSV file saved as 'fixed_pubmed_results.csv'")
+print(df.head())
